@@ -25,3 +25,72 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+main {
+    display: flex;
+    margin: 0 17% 0 17%;
+}
+
+.sedanCard {
+    background-color: var(--brightOrange);
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.suvCard {
+    background-color: var(--darkCyan);
+}
+
+.luxuryCard {
+    background-color: var(--veryDarkCyan);
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.sedanCard, .suvCard, .luxuryCard {
+    padding: 3rem;
+    max-width: 20rem;
+}
+
+.sedanTitle, .suvTitle, .luxuryTitle {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 35px;
+    margin: 2rem 0rem 2rem 0rem;
+    color: var(--veryLightGray);
+}
+
+.sedanText, .suvText, .luxuryText {
+    text-align: left;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    margin-bottom: 5rem;
+    color: var(--transparentWhite);
+    line-height: 1.8rem;
+}
+
+.learnMoreButton {
+    background: var(--veryLightGray);
+    border: none;
+    border-radius: 30px;
+    height: 3rem;
+    width: 9rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 16px;
+}
+
+.sedanCard .learnMoreButton {
+    color: var(--brightOrange);
+}
+
+.suvCard .learnMoreButton {
+    color: var(--darkCyan);
+}
+
+.luxuryCard .learnMoreButton {
+    color: var(--veryDarkCyan);
+}
+
+.learnMoreButton:hover {
+    cursor: pointer;
+    color: var(--veryLightGray);
+    border: 2px solid var(--veryLightGray);
+    background: none;
+}
